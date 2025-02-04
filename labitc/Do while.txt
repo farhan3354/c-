@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num;
+    int even,odd;
+    int pos, neg;
+    int count;
+    do{
+        cout<<"Enter Number :";
+        cin >> num;
+        if(num!=-99)
+        {
+            count++;
+            if(num>0)
+            {
+                pos++;
+                if(num%2==0)
+                {
+                  even++;
+                }
+                else
+                {
+                  odd++;
+                 }
+            }
+            else{
+                neg++;
+                if(num%2==0)
+                {
+                  even++;
+                }
+                else
+                {
+                  odd++;
+                 }
+            }
+        }
+        else{
+            cout<<"";
+        }
+    }while(num!=-99);
+    
+    cout<<" Total Numbers Enterer by user"<<count<<endl;
+    cout<<" Total Positive Number  :" <<pos<<endl;
+    cout<<" Total Negative Number  :" <<neg<<endl;
+    cout<<" Total Even Number  :" <<even<<endl;
+    cout<<" Total Odd Number  :" <<odd<<endl;
+}

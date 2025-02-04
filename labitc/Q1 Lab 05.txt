@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    char loan_status;
+    float credit_score=0;
+    float income=0;
+    cout<<" Have any existing loan to pay :";
+    cin>>loan_status;
+    if(loan_status=='y'){
+        cout<<" We will get back to you later";
+    }
+    else if(loan_status=='n'){
+        cout<<" Enter your Credit Score";
+        cin >> credit_score;
+        cout<<" Enter your Income";
+        cin >> income;
+        
+        if(income > 50000 && credit_score>700){
+            cout<<" Eligible for loan";
+        }
+        else if((income > 40000 || income <50000) && (credit_score>650 || credit_score <=700)){
+             cout<<" Eligible for loan with interest: ";
+        }
+        else if(credit_score <650){
+            cout<<" NOT Eligible for loan: ";
+        }
+    }
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n, largest = 0;
+	cout << "Enter a number: ";
+	cin >> n;
+	while (n >= 0)
+	{
+		if (n > largest)
+		{
+			largest = n;
+			cin >> n;
+		}
+	}
+	cout << "Largest number is: " << largest << endl;
+}
